@@ -7,7 +7,7 @@ Este relatório apresenta uma análise detalhada dos modelos de regressão utili
 O problema abordado consiste em prever o número de pessoas presentes em salas de aula usando sensores que medem o nível de dióxido de carbono (CO2), temperatura e humidade. A correlação entre estes indicadores e a ocupação é essencial para que se possam verificar padrões, de modo a que se possa melhorar a ventilação e garantir um ambiente saudável para os ocupantes das salas.
 
 ## Estado da arte
-A previsão da ocupação em ambientes fechados é um campo de estudo ativo, com diversas abordagens utilizando técnicas de *machine learning* e análise de dados. Modelos de regressão como regressão linear, *random forest* e *gradient descent*, são frequentemente utilizados deviso à sua capacidade de lidar com dados complexos e não lineares. Estudos anteriores já comprovaram que a concentração de CO2 é um forte indicador de presença humana, podendo por isso, ser utilizado como uma variável vital para os modelos de previsão.
+A previsão da ocupação em ambientes fechados é um campo de estudo ativo, com diversas abordagens utilizando técnicas de *machine learning* e análise de dados. Modelos de regressão como regressão linear, *random forest* e *gradient descent*, são frequentemente utilizados devido à sua capacidade de lidar com dados complexos e não lineares. Estudos anteriores já comprovaram que a concentração de CO2 é um forte indicador de presença humana, podendo por isso, ser utilizado como uma variável vital para os modelos de previsão.
 
 
 ## Desenvolvimento
@@ -19,7 +19,7 @@ Foram utilizados 5 modelos de regressão para prever a ocupação com base nos d
 - Suporte Vetorial de Regressão (SVR);
 -  K-Nearest Neighbors (KNN).
 
-Desta lista de modelos escolhida, nem todos foram lecionados durante a aula teórica mas, após pesquisar, foram escolhidos devido à sua capacidade de lidar com dados complexos e os resultados obtidos.
+Desta lista de modelos escolhidos, nem todos foram lecionados durante a aula teórica mas, após pesquisar, foram escolhidos devido à sua capacidade de lidar com dados complexos e os resultados obtidos.
 Para que estes desenvolvimentos sejam possíveis foram usadas as seguintes bibliotecas:
 - Pandas;
 - Scikit-Learn;
@@ -53,13 +53,20 @@ Para a obtenção destes valores foi usado o dataset baseado nos valores obtidos
 | Gradient Boosting        | 0.5248| 0.2260|
 | K-Nearest Neighbors      | 0.5188| 0.0133|
  
- Através destes resultados, pode concluir-se que o modelo com melhor desempenho é o *Random Forest*. Este tem o menor valor de *MAE* e o maior *R^2* entre todos os modelos testados, indicando uma capacidade de previsão superior em comparação com os outros modelos usados. Para este conjunto de dados específicos, o *Random Forest* é o modelo recomnedado de modo a obter valores mais precisos no que toca à previsão dos níveis de ocupação.
+ Através destes resultados, pode concluir-se que o modelo com melhor desempenho é o *Random Forest*. Este tem o menor valor de *MAE* e o maior *R^2* entre todos os modelos testados, indicando uma capacidade de previsão superior em comparação com os outros modelos usados. Para este conjunto de dados específicos, o *Random Forest* é o modelo recomendado de modo a obter valores mais precisos no que toca à previsão dos níveis de ocupação.
 
 ![image](comp_resultados.png)
 
 ## Conclusão
 
-Com base nos resultados, é possível concluir que o modelo *Random Forest Regressor* é o mais adequado para obter dados de CO2, temperatura e humidade, baseado nos *datasets* usados. Para futuros desenvolvimentos pretende-se utilizar modelos de séries temporais ou redes neuronais recorrentes com o objetivo de capturar melhor a dinâmica temporal dos dados.
+Com base nos resultados, é possível concluir que o modelo *Random Forest Regressor* é o mais adequado para obter dados de CO2, temperatura e humidade, baseado nos *datasets* usados.
+
+## Perspetivas de Desenvolvimento
+
+- Utilizar modelos de séries temporais ou redes neuronais recorrentes com o objetivo de capturar melhor a dinâmica temporal dos dados.
+- Utilização de mais sensores que possam vir a fornecer dados adicionais para ajudar a prever de maneira mais fiável a ocupação da sala de aula, tais como, sensores de temperatura, humidade e movimento;
+- Utilização de datasets maiores, fornecendo uma maior diversidade de dados tais como, horários e diferentes tipos de salas de aula;
+- Implementação de parâmetros adicionais para contextualizar a informação, tais como, os conteúdos da sala de aula sem ninguém lá dentro (ex.: plantas e equipamentos), volume da sala, tipo de evento a decorrer na saula de aula (palestra, aula normal ou exames) e etc, de modo a tornar o modelo mais refinado e a ter em conta estas informações que podem modificar os resultados obtidos;
 
 ## Links
 
