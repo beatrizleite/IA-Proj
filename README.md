@@ -63,5 +63,5 @@ Com base nos resultados, é possível concluir que o modelo *Random Forest Regre
 
 ## Links
 
-[Google Colab](https://colab.research.google.com/drive/1-6_K8W8MbyS-GCwVMZ-MxvU_VLHSgUGl?usp=sharing)
-[GitHub](https://github.com/beatrizleite/IA-Proj)
+- [Google Colab](https://colab.research.google.com/drive/1-6_K8W8MbyS-GCwVMZ-MxvU_VLHSgUGl?usp=sharing)
+- [GitHub](https://github.com/beatrizleite/IA-Proj)
