@@ -66,12 +66,8 @@ Para a obtenção destes valores foi usado o dataset baseado nos valores obtidos
 | Gradient Boosting         | ![Gradient Boosting](img/Gradient_Boosting.png)   |
 | MLP Regressor (MLPR)      | ![MLP Regressor](img/MLPR.png)           |
 | K-Nearest Neighbors (KNN) | ![K-Nearest Neighbors](img/K-Nearest_Neighbors.png)               |
-| Gradient Descent          | ![Gradient Descent](img/gradient_descent.png)     |
-
 
  Através destes resultados, pode concluir-se que o modelo com melhor desempenho é o *Random Forest*. Este tem o menor valor de *MAE* e o maior *R^2* entre todos os modelos testados, indicando uma capacidade de previsão superior em comparação com os outros modelos usados. Para este conjunto de dados específicos, o *Random Forest* é o modelo recomendado de modo a obter valores mais precisos no que toca à previsão dos níveis de ocupação.
-
-
 
 
 
