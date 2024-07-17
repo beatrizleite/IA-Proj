@@ -30,7 +30,7 @@ Os passos principais são:
 - **Escolha dos dados e análise dos mesmos**: Utilizam-se conjuntos de dados de diferentes salas (106, 204, 210) onde foi feito o estudo usando os sensores na Universidade Fernando Pessoa e os dados obtidos dos sensores implementados na escola secundária de Alpendorada;
 - **Formatação dos dados**: Após obter os dados obtidos via sensores resta apenas selecionar as variáveis mais relevantes para o estudo que se pretende fazer;
 
-| ![image](matriz.png) |
+| ![image](img/matriz.png) |
 |:--:| 
 | *Matriz de correlação* |
 - **Modelos Avaliados**: O passo lógico seguinte passou por escolher alguns modelos relevantes para comparar os resultados:
@@ -76,7 +76,7 @@ Para a obtenção destes valores foi usado o dataset baseado nos valores obtidos
 
 
 ### Comparação dos valores obtidos
-![image](comp_resultados.png)
+![image](img/comp_resultados.png)
 
 ## Conclusão
 
