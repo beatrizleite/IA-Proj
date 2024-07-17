@@ -29,7 +29,10 @@ Para que estes desenvolvimentos sejam possíveis foram usadas as seguintes bibli
 Os passos principais são:
 - **Escolha dos dados e análise dos mesmos**: Utilizam-se conjuntos de dados de diferentes salas (106, 204, 210) onde foi feito o estudo usando os sensores na Universidade Fernando Pessoa e os dados obtidos dos sensores implementados na escola secundária de Alpendorada;
 - **Formatação dos dados**: Após obter os dados obtidos via sensores resta apenas selecionar as variáveis mais relevantes para o estudo que se pretende fazer;
-![image](matriz.png)
+
+| ![image](matriz.png) |
+|:--:| 
+| *Matriz de correlação* |
 - **Modelos Avaliados**: O passo lógico seguinte passou por escolher alguns modelos relevantes para comparar os resultados:
 	- **MLPRegressor (Multi-layer Perceptron Regressor)**: Rede neural com várias camadas ocultas para aprendizagem profunda de padrões nos dados (a sua performance foi limitada de modo a manter o tempo de execução dentro dos limites, comparativamente com os outros modelos, tornando o resultado obtido não tão bom como se poderia obter);
 	- **Regressão Linear Simples**: Modelo linear básico de modo a establecer uma linha de base;
@@ -52,9 +55,27 @@ Para a obtenção destes valores foi usado o dataset baseado nos valores obtidos
 | Random Forest            | 0.3907| 0.4079|
 | Gradient Boosting        | 0.5248| 0.2260|
 | K-Nearest Neighbors      | 0.5188| 0.0133|
- 
+
+
+ ### Comparação de resultados dos datasets
+
+| Modelo                    | Gráfico                                           |
+|---------------------------|---------------------------------------------------|
+| Regressão Linear Simples  | ![Regressão Linear Simples](img/Simple_Linear_Regression.png) |
+| Random Forest             | ![Random Forest](img/Random_Forest.png)           |
+| Gradient Boosting         | ![Gradient Boosting](img/Gradient_Boosting.png)   |
+| MLP Regressor (MLPR)      | ![MLP Regressor](img/MLPR.png)           |
+| K-Nearest Neighbors (KNN) | ![K-Nearest Neighbors](img/K-Nearest_Neighbors.png)               |
+| Gradient Descent          | ![Gradient Descent](img/gradient_descent.png)     |
+
+
  Através destes resultados, pode concluir-se que o modelo com melhor desempenho é o *Random Forest*. Este tem o menor valor de *MAE* e o maior *R^2* entre todos os modelos testados, indicando uma capacidade de previsão superior em comparação com os outros modelos usados. Para este conjunto de dados específicos, o *Random Forest* é o modelo recomendado de modo a obter valores mais precisos no que toca à previsão dos níveis de ocupação.
 
+
+
+
+
+### Comparação dos valores obtidos
 ![image](comp_resultados.png)
 
 ## Conclusão
