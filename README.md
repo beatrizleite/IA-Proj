@@ -59,6 +59,7 @@ Para a obtenção destes valores foi usado o dataset baseado nos valores obtidos
 
  ### Comparação de resultados dos datasets
 
+#### CO2
 | Modelo                    | Gráfico                                           |
 |---------------------------|---------------------------------------------------|
 | Regressão Linear Simples  | ![Regressão Linear Simples](img/Simple_Linear_Regression.png) |
